@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Code Efficiency Sample</string>
+    <string name="item_movie_title">Movie Title</string>
+    <string name="item_movie_description">Movie Description</string>
+
+    <string name="item_tv_show_status">Status</string>
+    <string name="item_tv_show_first_release">First Air Date</string>
+    <string name="item_tv_show_last_release">Last Air Date</string>
+
+    <!-- Main Menu -->
+    <string name="change_language_settings">Change Language Settings</string>
+
+    <!-- Tab Layout -->
+    <string name="movie_tab_title">MOVIES</string>
+    <string name="tv_show_tab_title">TV SHOWS</string>
+
+    <!-- Detail Movie -->
+    <string name="movie_vote_average">%s / 10</string>
+    <string name="movie_release_date">Release Date</string>
+    <string name="movie_year">2018</string>
+    <string name="movie_rate">Rate</string>
+    <string name="movie_vote_average_sample">7.9 / 10</string>
+    <string name="movie_language">Language</string>
+    <string name="movie_language_sample">EN</string>
+    <string name="movie_image_desc">Movie Poster</string>
+
+    <!-- Detail TV Show -->
+    <string name="tv_show_first_air">First Air Date</string>
+    <string name="tv_show_last_air">Last Air Date</string>
+    <string name="tv_show_status">Status</string>
+    <string name="tv_show_sample">Ended</string>
+    <string name="tv_show_image_desc">TV Show Poster</string>
+</resources>

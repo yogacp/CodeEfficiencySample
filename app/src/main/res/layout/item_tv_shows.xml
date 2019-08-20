@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"/>
+
+    <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/img_photo"
+            android:text="@string/item_movie_title"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img_photo"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textStyle="bold"
+            android:text="@string/item_tv_show_status"/>
+
+    <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt0"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/img_photo"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/item_movie_description"/>
+
+    <LinearLayout
+            android:id="@+id/layoutFirstDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_status"
+            android:layout_toEndOf="@id/img_photo"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:text="@string/item_tv_show_first_release"/>
+
+        <TextView
+                android:id="@+id/txt_first_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/item_tv_show_first_release"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layoutLastDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_status"
+            android:layout_toEndOf="@id/layoutFirstDate"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:text="@string/item_tv_show_last_release"/>
+
+        <TextView
+                android:id="@+id/txt_last_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/item_tv_show_last_release"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
