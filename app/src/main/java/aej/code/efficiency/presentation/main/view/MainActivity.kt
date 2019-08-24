@@ -2,6 +2,7 @@ package aej.code.efficiency.presentation.main.view
 
 import aej.code.efficiency.R
 import aej.code.efficiency.domain.adapter.GenericPagerAdpapter
+import aej.code.efficiency.domain.adapter.initialadapter.ViewPagerAdapter
 import aej.code.efficiency.external.extension.setUp
 import aej.code.efficiency.external.extension.notNull
 import aej.code.efficiency.presentation.main.contract.MainContract
@@ -20,7 +21,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), MainContract.View {
 
     var mActiveFragment: Fragment? = null
-    var mAdapter: GenericPagerAdpapter? = null
+    var mAdapter: GenericPagerAdpapter? = null // Extension Adapter
+    var mViewPagerAdapter: ViewPagerAdapter? = null //Initial adapter
     var mViewPosition: Int = 0
 
     override val fragments: List<Fragment>
@@ -42,8 +44,12 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     }
 
     override fun setupViewPagerAndTabLayout() {
-        mAdapter = supportFragmentManager.setUp(fragments, fragmentTitles)
-        mainViewPager.adapter = mAdapter
+        mAdapter = supportFragmentManager.setUp(fragments, fragmentTitles) // Extension Adapter
+        mViewPagerAdapter = ViewPagerAdapter(
+            supportFragmentManager,
+            this
+        )  //Initial adapter
+        mainViewPager.adapter = mViewPagerAdapter
         mainViewPager.currentItem = mViewPosition
         mainViewPager.addOnPageChangeListener(
             TabLayout.TabLayoutOnPageChangeListener(mainTabLayout)
