@@ -1,8 +1,8 @@
 package aej.code.efficiency.presentation.main.view
 
 import aej.code.efficiency.R
-import aej.code.efficiency.domain.adapter.GenericPagerAdpapter
-import aej.code.efficiency.domain.adapter.initialadapter.ViewPagerAdapter
+import aej.code.efficiency.domain.adapter.generic.GenericPagerAdpapter
+import aej.code.efficiency.domain.adapter.initial.ViewPagerAdapter
 import aej.code.efficiency.external.extension.setUp
 import aej.code.efficiency.external.extension.notNull
 import aej.code.efficiency.presentation.main.contract.MainContract

@@ -2,7 +2,7 @@ package aej.code.efficiency.presentation.main.fragments.movie
 
 import aej.code.efficiency.R
 import aej.code.efficiency.data.responses.MovieData
-import aej.code.efficiency.domain.adapter.initialadapter.movie.MovieViewAdapter
+import aej.code.efficiency.domain.adapter.initial.movie.MovieViewAdapter
 import aej.code.efficiency.external.extension.debugMode
 import android.os.Bundle
 import android.view.LayoutInflater

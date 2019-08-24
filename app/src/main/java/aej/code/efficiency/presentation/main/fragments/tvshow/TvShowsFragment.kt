@@ -2,7 +2,7 @@ package aej.code.efficiency.presentation.main.fragments.tvshow
 
 import aej.code.efficiency.R
 import aej.code.efficiency.data.responses.TvShowData
-import aej.code.efficiency.domain.adapter.initialadapter.tvshow.TvShowAdapter
+import aej.code.efficiency.domain.adapter.initial.tvshow.TvShowAdapter
 import aej.code.efficiency.external.extension.debugMode
 import android.os.Bundle
 import android.view.LayoutInflater

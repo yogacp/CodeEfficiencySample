@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter
+package aej.code.efficiency.domain.adapter.generic
 
 import aej.code.efficiency.external.extension.inflate
 import android.view.View
@@ -57,7 +57,12 @@ abstract class AbstractAdapter<ITEM> constructor(protected var itemList: List<IT
     }
 
     private fun calculateDiff(newItems: List<ITEM>): DiffUtil.DiffResult {
-        return DiffUtil.calculateDiff(DiffUtilCallback(itemList, newItems))
+        return DiffUtil.calculateDiff(
+            DiffUtilCallback(
+                itemList,
+                newItems
+            )
+        )
     }
 
     fun add(item: ITEM) {

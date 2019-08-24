@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter.initialadapter.movie
+package aej.code.efficiency.domain.adapter.initial.movie
 
 import aej.code.efficiency.R
 import aej.code.efficiency.data.responses.MovieData

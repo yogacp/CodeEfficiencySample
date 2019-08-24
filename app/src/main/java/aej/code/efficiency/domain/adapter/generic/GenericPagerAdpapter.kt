@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter
+package aej.code.efficiency.domain.adapter.generic
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

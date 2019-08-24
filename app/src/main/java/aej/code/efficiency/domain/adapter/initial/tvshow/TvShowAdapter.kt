@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter.initialadapter.tvshow
+package aej.code.efficiency.domain.adapter.initial.tvshow
 
 import aej.code.efficiency.R
 import aej.code.efficiency.data.responses.TvShowData

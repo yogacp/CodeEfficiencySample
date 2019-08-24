@@ -1,7 +1,7 @@
 package aej.code.efficiency.external.extension
 
-import aej.code.efficiency.domain.adapter.GenericPagerAdpapter
-import aej.code.efficiency.domain.adapter.GenericRecyclerviewAdapter
+import aej.code.efficiency.domain.adapter.generic.GenericPagerAdpapter
+import aej.code.efficiency.domain.adapter.generic.GenericRecyclerviewAdapter
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -16,7 +16,11 @@ fun FragmentManager.setUp(
     fragments: List<Fragment>,
     titles: List<String?>? = null
 ) : GenericPagerAdpapter {
-    return GenericPagerAdpapter(this, fragments, titles ?: listOf())
+    return GenericPagerAdpapter(
+        this,
+        fragments,
+        titles ?: listOf()
+    )
 }
 
 fun <ITEM> RecyclerView.setUp(items: List<ITEM>,

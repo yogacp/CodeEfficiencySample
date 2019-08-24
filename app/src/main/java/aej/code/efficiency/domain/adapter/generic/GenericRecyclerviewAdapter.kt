@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter
+package aej.code.efficiency.domain.adapter.generic
 
 import android.view.View
 

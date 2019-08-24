@@ -1,4 +1,4 @@
-package aej.code.efficiency.domain.adapter.initialadapter
+package aej.code.efficiency.domain.adapter.initial
 
 import aej.code.efficiency.R
 import aej.code.efficiency.presentation.main.fragments.movie.MoviesFragment
