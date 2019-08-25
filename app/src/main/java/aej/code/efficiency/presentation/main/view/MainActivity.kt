@@ -2,9 +2,8 @@ package aej.code.efficiency.presentation.main.view
 
 import aej.code.efficiency.R
 import aej.code.efficiency.domain.adapter.generic.GenericPagerAdpapter
-import aej.code.efficiency.domain.adapter.initial.ViewPagerAdapter
-import aej.code.efficiency.external.extension.setUp
 import aej.code.efficiency.external.extension.notNull
+import aej.code.efficiency.external.extension.setUp
 import aej.code.efficiency.presentation.main.contract.MainContract
 import aej.code.efficiency.presentation.main.fragments.movie.MoviesFragment
 import aej.code.efficiency.presentation.main.fragments.tvshow.TvShowsFragment
@@ -22,7 +21,6 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     var mActiveFragment: Fragment? = null
     var mAdapter: GenericPagerAdpapter? = null // Extension Adapter
-    var mViewPagerAdapter: ViewPagerAdapter? = null //Initial adapter
     var mViewPosition: Int = 0
 
     override val fragments: List<Fragment>
@@ -45,11 +43,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun setupViewPagerAndTabLayout() {
         mAdapter = supportFragmentManager.setUp(fragments, fragmentTitles) // Extension Adapter
-        mViewPagerAdapter = ViewPagerAdapter(
-            supportFragmentManager,
-            this
-        )  //Initial adapter
-        mainViewPager.adapter = mViewPagerAdapter
+        mainViewPager.adapter = mAdapter
         mainViewPager.currentItem = mViewPosition
         mainViewPager.addOnPageChangeListener(
             TabLayout.TabLayoutOnPageChangeListener(mainTabLayout)
